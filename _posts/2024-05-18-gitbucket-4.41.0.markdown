@@ -26,15 +26,17 @@ Keyword search is supported in the search box of issues and pull requests view. 
 
 ![Keyword search]({{site.baseurl}}/images/gitbucket-4.41.0/keyword_search_2.png)
 
-## Diff settings
+## Max diff display settings
 
 Large diff could make the browser very heavy as it's rendered by JavaScript. You can avoid it by configuraing max files and lines limit in showing diff at the system settings.
 
 ![Diff settings]({{site.baseurl}}/images/gitbucket-4.41.0/diff_settings.png)
 
-## Adjust the default branch automatically when cloning external repo
+## Adjust the default branch when cloning external repository
 
-The default branch is now automatically chosen from either `main` or `master` when creating a repository by cloning an external repository.
+When creating a repository on GitBucket by cloning an external repository, the default branch has been set based on the default configuration of GitBucket. But it has caused an error at the repository viewer when the branch doesn't exist.
+
+Since this version, either of `main` or `master` is automatically chosen when the default branch doesn't exist.
 
 This release also includes some bugfixes, performance improvements, and internal library updates. See all closed issues in [4.41.0](https://github.com/gitbucket/gitbucket/issues?q=is%3Aclosed+milestone%3A4.41.0) to know details.
 
